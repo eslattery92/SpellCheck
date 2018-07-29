@@ -1,11 +1,13 @@
+#Description: A spellcheck for attribute tables in ArcMap
+
 import arcpy
 import enchant
 from collections import Counter
 import difflib
 
-arcpy.env.workspace = "C:/Schools/Schools.gdb"
+arcpy.env.workspace = #[gdb where fc is located]
 
-fc = "C:/Schools/Schools.gdb/NJ_Towns"
+fc = # address of feature class
 
 fields = [x for x in arcpy.ListFields(fc) if x.type == 'String']
 
@@ -116,5 +118,3 @@ def find_similiar():
 
 
 find_fields()
-
-
