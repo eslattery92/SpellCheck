@@ -3,6 +3,7 @@ This script will find and fix spelling errors in an ArcMap attribute tables. It 
 
 # Prerequistes
 ArcMap 10.0+
+<br>
 Modules: arcpy, enchant
 
 # Installing
